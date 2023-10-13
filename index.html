@@ -11,7 +11,9 @@
 <body>
     <div class="splash-container">
         <div>
-            <div></div>
+            <div class="logo-backdrop">
+                <h1>Company Name</h1>
+            </div>
         </div>
     </div>
     <div class="form-container">
@@ -26,36 +28,37 @@
                 <ul>
                     <li>
                         <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name">
+                        <input type="text" name="first_name" id="first_name" required>
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </li>
                     <li>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <label for="last_name">First Name</label>
-                        <input type="text" name="last_name" id="last_name">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" required>
                     </li>
                     <li>
                         <label for="tel_number">Phone Number</label>
-                        <input type="tel" name="tel_number" id="tel_number">
+                        <input type="tel" name="tel_number" id="tel_number" required>
                     </li>
                     <li>
                         <label for="pass_confirm">Confirm Password</label>
-                        <input type="password" name="pass_confirm" id="pass_confirm">
+                        <input type="password" name="pass_confirm" id="pass_confirm" required>
                     </li>
                 </ul>
-            </form>
+            </div>
+            <button type="submit">Submit</button>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
-        <button type="submit">Submit</button>
-        <p>Already have an account? <a href="">Log in</a></p>
-    </div>
+            </form>
+
 </body>
 
 </html>

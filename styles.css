@@ -3,17 +3,56 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+form {
+    display: flex
 }
 
 ul {
     list-style-type: none;
+
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+button {
+    width: fit-content;
+    padding: 0.25rem 2rem;
+    font-size: 2rem;
+    color: white;
+    background: #596D48;
+    border: none;
+    border-radius: 12px;
 }
 
 .splash-container {
     width: 33.3vw;
     height: 100vh;
-    background-color:lightblue;
+    background-color: lightblue;
+}
+
+.logo-backdrop {
+    margin-top: 15vw;
+    width: 100%;
+    height: 10vw;
+    background-color: rgba(119, 136, 153, 0.75);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.logo-backdrop h1 {
+    margin-right: 10%;
 }
 
 .form-container {
@@ -24,12 +63,14 @@ ul {
     justify-content: center;
 }
 
-button {
-    width: fit-content;
-    padding: 0.25rem 2rem;
-    font-size: 2rem;
-    color: white;
-    background: green;
-    border: none;
-    border-radius: 12px;
+input:focus {
+    outline-color: blue;
+}
+
+input[type="password"] {
+    outline-color: red;
+}
+
+button:hover {
+    cursor: pointer;
 }
